@@ -1,0 +1,11 @@
+Revision history for MooseX-NotRequired
+
+0.03    2011-01-16
+        Added extra test
+
+0.02    2011-09-30
+        Fixed problem where base class was also modified.
+
+0.01    2011-09-30
+        First version created.
+
