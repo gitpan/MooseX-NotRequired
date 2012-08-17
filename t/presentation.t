@@ -1,4 +1,9 @@
-use DateTime;
+use Test::Most;
+SKIP: {
+    eval "use DateTime";
+        skip('These tests are optional extras that can be enabled by installing DateTime', 1) if $@;
+};
+
 {
     package SalesOrder;
 
@@ -14,7 +19,6 @@ use DateTime;
     1;
 }
 
-use Test::Most;
 use MooseX::NotRequired;
 
 throws_ok 

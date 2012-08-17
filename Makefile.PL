@@ -17,6 +17,7 @@ resources(
             url => 'git://github.com/colinnewell/MooseX-NotRequired.git',
             type => 'git',
         },
+        'license',    => 'http://dev.perl.org/licenses/',
 );
 
 WriteAll;
