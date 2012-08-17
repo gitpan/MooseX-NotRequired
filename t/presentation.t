@@ -1,8 +1,7 @@
 use Test::Most;
 SKIP: {
-    eval "use DateTime";
+    eval { require DateTime };
         skip('These tests are optional extras that can be enabled by installing DateTime', 1) if $@;
-};
 
 {
     package SalesOrder;
@@ -81,5 +80,6 @@ throws_ok
 } qr'does not pass the type constraint because'i, 
     'Type constraints still work on original class';
 
+};
 done_testing;
 

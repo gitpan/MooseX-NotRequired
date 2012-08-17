@@ -30,4 +30,4 @@ resources:
     type: git
     url: git://github.com/colinnewell/MooseX-NotRequired.git
     web: https://github.com/colinnewell/MooseX-NotRequired
-version: 0.10
+version: 0.11
